@@ -48,8 +48,6 @@ class NextGreaterNumber{
 
         }
 
-    }
-
     private function swap($number, $indexFrom, $indexTo){
         if($number[$indexFrom] < $number[$indexTo] ){
             
