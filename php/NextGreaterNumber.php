@@ -14,7 +14,7 @@ class NextGreaterNumber{
         $this->min_index = '';
     }
 
-    public function next_greater_number(){
+    public function find(){
         $output = '';
 
         for($i = ($this->number_length - 1); $i >= 0; $i--){
