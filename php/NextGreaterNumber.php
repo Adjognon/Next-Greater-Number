@@ -37,6 +37,25 @@ class NextGreaterNumber{
         }
 
     }
+
+    private function swap($number, $indexFrom, $indexTo){
+        if($number[$indexFrom] < $number[$indexTo] ){
+            
+         $tempNumner = $number[$indexFrom];
+         $number[$indexFrom] = $number[$indexTo];
+         $number[$indexTo] = $tempNumner;
+        }
+         return $number;
+    }
+
+    private function sortNumber($swaped_number, $min_index){
+        $leftNumber = substr($swaped_number, 0, $min_index + 1);
+        $rightNumber = substr($swaped_number, $min_index + 1);
+        $numberToArray = str_split($rightNumber);
+        sort($numberToArray);
+        $fromArrayToNumber = implode('', $numberToArray);
+        return $leftNumber.''.$fromArrayToNumber;
+    }
 }
 
 ?>
