@@ -66,6 +66,10 @@ class NextGreaterNumber{
         $fromArrayToNumber = implode('', $numberToArray);
         return $leftNumber.''.$fromArrayToNumber;
     }
+
+    private function error(){
+        return 0;    
+    }
 }
 
 ?>
