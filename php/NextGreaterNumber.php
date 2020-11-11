@@ -24,6 +24,18 @@ class NextGreaterNumber{
             }
         }
 
+        if($this->min_index !== ''){
+
+            for($j = ($this->min_index + 1); $j < $this->number_length; $j++){
+            
+                if($this->number[$j] > $this->number[$this->min_index] && $this->number[$j] < $this->number[$j - 1]){
+                     $this->indexTo = $j;
+                }
+                
+            }
+
+        }
+
     }
 }
 
