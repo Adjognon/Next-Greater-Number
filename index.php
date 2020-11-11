@@ -30,7 +30,7 @@
             <h4>Numbers Game</h4>
         </div>
         <div class="flex-center flex-column">
-            <form class="text-center" style="color: #757575;" method="post" action="./php/controler.php">
+            <form class="text-center" style="color: #757575;" method="post" action="./php/controller.php">
 
                 <div class="md-form">
                     <input type="text" id="number" name="number" class="form-control">
