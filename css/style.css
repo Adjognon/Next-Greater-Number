@@ -1,0 +1,47 @@
+.home-text-color {
+    background: -webkit-linear-gradient(rgb(200, 53, 77), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.view{
+    height: 100vh;
+    background: url("https://onlyvectorbackgrounds.com/wp-content/uploads/2019/03/Gradient-Abstract-Shapes-Background-Color.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.title{
+    margin-top:50px;
+    padding:20px;
+    background: transparent;
+  
+}
+
+.title h4{
+    font-weight:bold;
+    background: -webkit-linear-gradient(rgb(211, 17, 49), rgb(9, 255, 0));
+    -webkit-background-clip: text;
+    font-size:35px;
+    -webkit-text-fill-color: transparent;
+}
+
+.animation-style{
+    animation-name: dancingAnimation; 
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+    animation-direction: alternate;
+}
+
+@keyframes dancingAnimation {
+    0%   { -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(00deg);}
+    25%  { -ms-transform: rotate(40deg); /* IE 9 */
+        transform: rotate(40deg);}
+    50%  { -ms-transform: rotate(60deg); /* IE 9 */
+        transform: rotate(00deg);}
+    100% { -ms-transform: rotate(80deg); /* IE 9 */
+        transform: rotate(-40deg);}
+  }
