@@ -34,6 +34,18 @@ class NextGreaterNumber{
                 
             }
 
+            $swaped_number = $this->swap($this->number, $this->min_index, $this->indexTo);
+            if($swaped_number !== $this->number){
+                $output = $this->sortNumber($swaped_number, $this->min_index);
+            }else{
+                $output = $this->error(); 
+            }
+            
+            }else{
+                $output = $this->error(); 
+            }
+        return $output;
+
         }
 
     }
